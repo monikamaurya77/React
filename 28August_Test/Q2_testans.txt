@@ -1,18 +1,14 @@
 2) What all information is stored in package.json and how is it different from package-lock.json?
-ANS:- Your package. json holds important information about the project. It contains human-readable metadata about the project (like the project name and description) as well as functional metadata like the package version number and a list of dependencies required by the application.
+ANS:- Your package. json holds important information about the project. 
+It contains human-readable metadata about the project (like the project name and description) as well as functional metadata 
+like the package version number and a list of dependencies required by the application.
 
 Difference between package. json and package-lock. json files are,
 package.json -> It contains basic information about the project.
-                              It is mandatory for every project.
-                              It records important metadata about the project.
-                              It contains information such as name, description,                                
-                              author, script, and dependencies.
-package.lock.json -> It describes the exact tree that was generated to                          
-                                      allow subsequent installs to have the identical tree.
-                                      It is automatically generated for those operations           
-                                      where npm modifies either node_modules tree or                                
-                                      package.json.
-	                       It allows future devs to install the same 
-                                      dependencies in the project.
-	                       It contains the name, dependencies, and locked 
-                                      version of the project. 
+                It is mandatory for every project.
+                It records important metadata about the project.
+                It contains information such as name, description,author, script, and dependencies.
+package.lock.json -> It describes the exact tree that was generated to allow subsequent installs to have the identical tree.
+                     It is automatically generated for those operations where npm modifies either node_modules tree or package.json.
+	             It allows future devs to install the same dependencies in the project.
+	             It contains the name, dependencies, and locked version of the project. 
