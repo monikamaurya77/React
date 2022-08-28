@@ -1,4 +1,5 @@
 1) Is react a framework or a library and what is the difference between the two?
 ANS:-  React is a JavaScript library  for building user interfaces.
-Difference between the framework or a library are, Libraries provide developers with predefined functions and classes to make their work easier and boost the development process.
- Framework, on the other hand, is like the foundation upon which developers build applications for specific platforms.
+Difference between the framework or a library are,
+Libraries provide developers with predefined functions and classes to make their work easier and boost the development process.
+Framework, on the other hand, is like the foundation upon which developers build applications for specific platforms.
