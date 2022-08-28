@@ -1,2 +1,5 @@
 3) Does React uses Html? Explain
-ANS:- YES  with React, we write HTML using JavaScript. We rely on the power of JavaScript to generate HTML that depends on some data, rather than enhancing HTML to make it work with that data. Enhancing HTML is what other JavaScript frameworks usually do.React renders HTML to the web page by using a function called ReactDOM. render() .
+ANS:- YES  with React, we write HTML using JavaScript.
+We rely on the power of JavaScript to generate HTML that depends on some data, rather than enhancing HTML to make it work with that data. 
+Enhancing HTML is what other JavaScript frameworks usually do.
+React renders HTML to the web page by using a function called ReactDOM. render() .
