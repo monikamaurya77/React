@@ -1,0 +1,12 @@
+4) Briefly describe what is the use of the following in react js?
+ANS:-  App.js 
+App. js on the other hand has the root component of the react app because every view and component are handled with hierarchy in React, where <App /> is the top most component in the hierarchy. This gives you the feel that you maintain hierarchy in your code starting from App.
+
+Index.js
+Regarding React, index. js is where you would usually mount/render your main react component onto your “root” element(which you mark in your html).
+
+app.css
+in React is used to style the React App or Component. The style attribute is the most used attribute for styling in React applications, which adds dynamically-computed styles at render time. It accepts a JavaScript object in camelCased properties rather than a CSS string.
+
+index.html
+index. html is the main HTML file of our app that includes your React code and provides a context for React to render to. Let's take a look at the file: Specifically, it includes a div that your react app will show up inside.
