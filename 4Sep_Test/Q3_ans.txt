@@ -1,5 +1,7 @@
 3) How to Use CSS in React? Explain all methods by using a small code snippet.
-ANS:-  CSS in React is used to style the React App or Component. The style attribute is the most used attribute for styling in React applications, which adds dynamically-computed styles at render time. It accepts a JavaScript object in camelCased properties rather than a CSS string.
+ANS:-  CSS in React is used to style the React App or Component.
+The style attribute is the most used attribute for styling in React applications, which adds dynamically-computed styles at render time. 
+It accepts a JavaScript object in camelCased properties rather than a CSS string.
 
 1] Importing external stylesheets:-
 React can import CSS files. The process is similar to how we link up CSS file in the HTML <head>:
@@ -47,7 +49,8 @@ export default App;
 
 
 3] Use CSS Modules:-
-A CSS Module stylesheet is similar to a regular stylesheet, only with a different extension (e.g. styles.module.css). Here’s how they’re set up:
+A CSS Module stylesheet is similar to a regular stylesheet, only with a different extension (e.g. styles.module.css). 
+Here’s how they’re set up:
 1) Create a file with .module.css as the extension.
 2) Import that module into the React app (like we saw earlier)
 3) Add a className to an element or component and reference the particular style from the imported styles.
