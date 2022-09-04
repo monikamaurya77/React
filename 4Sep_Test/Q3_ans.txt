@@ -1,0 +1,92 @@
+3) How to Use CSS in React? Explain all methods by using a small code snippet.
+ANS:-  CSS in React is used to style the React App or Component. The style attribute is the most used attribute for styling in React applications, which adds dynamically-computed styles at render time. It accepts a JavaScript object in camelCased properties rather than a CSS string.
+
+1] Importing external stylesheets:-
+React can import CSS files. The process is similar to how we link up CSS file in the HTML <head>:
+1) Create a new CSS file in your project directory.
+2)Write CSS.
+3) Import it into the React file.
+
+import { React } from "react";
+import "./Components/css/App.css";
+function App() {
+  return (
+    <div className="main">
+    </div>
+  );
+}
+export default App;
+
+
+2] Write inline styles:-
+example of inline styling in React:
+<div className="main" style={{color:"red"}}>
+A better approach, though, is to use objects:
+1) First, create an object that contains styles for different elements.
+2) Then add it to an element using the style attribute and then select the property to style.
+
+import { React } from "react";
+function App() {
+  const styles = {
+    main: {
+      backgroundColor: "#f1f1f1",
+      width: "100%",
+    },
+    inputText: {
+      padding: "10px",
+      color: "red",
+    },
+  };
+  return (
+    <div className="main" style={styles.main}>
+      <input type="text" style={styles.inputText}></input>
+    </div>
+  );
+}
+export default App;
+
+
+3] Use CSS Modules:-
+A CSS Module stylesheet is similar to a regular stylesheet, only with a different extension (e.g. styles.module.css). Here’s how they’re set up:
+1) Create a file with .module.css as the extension.
+2) Import that module into the React app (like we saw earlier)
+3) Add a className to an element or component and reference the particular style from the imported styles.
+
+/* styles.module.css */
+.font {
+  color: #f00;
+  font-size: 20px;
+}
+
+import { React } from "react";
+import styles from "./styles.module.css";
+function App() {
+  return (
+    <h1 className={styles.heading}>Hello World</h1>
+  );
+}
+export default App;
+
+
+4) Use styled-components:-
+Install the styled-components npm package in the command line:
+npm install styled-components
+
+Next up, import it into the React app:
+import styled from 'styled-components'
+
+import { React } from "react";
+import styled from "styled-components";
+function App() {
+  const Wrapper = styled.div`
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    display: block;
+  `;
+  return <Wrapper />;
+}
+export default App;
+
+
+
